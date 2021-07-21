@@ -1,8 +1,30 @@
 import { RenderMode } from './types';
 
 export const examples = [
+    {
+      // The first example should set all possible fields!
+      name: "LJChart",
+      text: "loads url html from ljchart",
+      config: {
+          request: "http",
+          method: "iframe",
+          mode: i.html,
+          template: "",
+          url: "http://srp.uat.safe.cn:8000/hcexp/?options=%7B%22ljchart%22%3A%22.%2Fshare%2Fdemo%22%2C%22baseurl%22%3A%22http%3A%2F%2Fsrp.uat.safe.cn%3A8000%2Fljc%2F%22%7D&type=html",
+          params_js: "{cid:ctrl.template('$__cid')}",
+          header_js: "{}",
+          responseType: "text",
+          withCredentials: !1,
+          skipSameURL: !0,
+          showErrors: !0,
+          showTime: !1,
+          showTimePrefix: null,
+          showTimeFormat: "LTS",
+          showTimeValue: "request",
+          templateResponse: !0,
+      },
+  },
   {
-    // The first example should set all possible fields!
     name: 'Simple',
     text: 'loads static content from github',
     config: {
