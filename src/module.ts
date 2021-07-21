@@ -222,6 +222,7 @@ class AjaxCtrl extends MetricsPanelCtrl {
     // make shallow copy of scoped vars,
     // and add built in variables interval and interval_ms
     const scopedVars = (this.scopedVars = Object.assign({}, this.panel.scopedVars, {
+      __cid: { text: 'none_none_' + this.contextSrv.user.name, value: 'none_none_' + this.contextSrv.user.name },
       __interval: { text: this.interval, value: this.interval },
       __interval_ms: { text: this.intervalMs, value: this.intervalMs },
     }));
